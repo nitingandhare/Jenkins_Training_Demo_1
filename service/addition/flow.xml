@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT>-- main --</COMMENT>
 
   <!-- nodes -->
 
@@ -14,7 +15,7 @@
 
   <!-- nodes -->
 
-<INVOKE TIMEOUT="" SERVICE="pub.math:addInts" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="pub.math:multiplyInts" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
@@ -27,7 +28,7 @@
     <value name="node_type">record</value>
     <value name="node_subtype">unknown</value>
     <value name="is_public">false</value>
-    <value name="field_name">addIntsInput</value>
+    <value name="field_name">multiplyIntsInput</value>
     <value name="field_type">record</value>
     <value name="field_dim">0</value>
     <value name="nillable">true</value>
@@ -201,7 +202,7 @@
     <value name="node_type">record</value>
     <value name="node_subtype">unknown</value>
     <value name="is_public">false</value>
-    <value name="field_name">addIntsOutput</value>
+    <value name="field_name">multiplyIntsOutput</value>
     <value name="field_type">record</value>
     <value name="field_dim">0</value>
     <value name="nillable">true</value>
@@ -230,8 +231,8 @@
 <MAPDELETE FIELD="/value;1;0">
 </MAPDELETE>
 
-<MAPDELETE FIELD="/request;4;0;Training_Git.document:additionRq">
-</MAPDELETE>
+<MAPCOPY FROM="/value;1;0" TO="/response;4;0;Training_Git.document:additionRs/result;1;0">
+</MAPCOPY>
 
 <MAPDELETE FIELD="/num2;1;0">
 </MAPDELETE>
@@ -239,8 +240,8 @@
 <MAPDELETE FIELD="/num1;1;0">
 </MAPDELETE>
 
-<MAPCOPY FROM="/value;1;0" TO="/response;4;0;Training_Git.document:additionRs/result;1;0">
-</MAPCOPY>
+<MAPDELETE FIELD="/request;4;0;Training_Git.document:additionRq">
+</MAPDELETE>
 </MAP>
 </INVOKE>
 </SEQUENCE>

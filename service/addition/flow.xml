@@ -5,7 +5,7 @@
 
   <!-- nodes -->
 
-<SEQUENCE TIMEOUT="1000" EXIT-ON="SUCCESS">
+<SEQUENCE TIMEOUT="" EXIT-ON="SUCCESS">
   <COMMENT>-- main block --</COMMENT>
 
   <!-- nodes -->

@@ -5,13 +5,15 @@
 
   <!-- nodes -->
 
-<SEQUENCE TIMEOUT="1000" EXIT-ON="SUCCESS">
+  <SEQUENCE TIMEOUT="1000" EXIT-ON="SUCCESS">
   <COMMENT>-- main --</COMMENT>
+
+
 
   <!-- nodes -->
 
-<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE">
-  <COMMENT>-- try --</COMMENT>
+<SEQUENCE TIMEOUT="1000" EXIT-ON="FAILURE">
+  <COMMENT>-- try block --</COMMENT>
 
   <!-- nodes -->
 
@@ -247,7 +249,7 @@
 </SEQUENCE>
 
 <SEQUENCE TIMEOUT="" EXIT-ON="DONE">
-  <COMMENT>-- catch --</COMMENT>
+  <COMMENT>-- catch block --</COMMENT>
 
   <!-- nodes -->
 

@@ -10,7 +10,7 @@
 
   <!-- nodes -->
 
-<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE">
+<SEQUENCE TIMEOUT="1000" EXIT-ON="FAILURE">
   <COMMENT>-- try block --</COMMENT>
 
   <!-- nodes -->

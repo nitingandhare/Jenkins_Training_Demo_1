@@ -247,7 +247,7 @@
 </SEQUENCE>
 
 <SEQUENCE TIMEOUT="" EXIT-ON="DONE">
-  <COMMENT>-- catch --</COMMENT>
+  <COMMENT>-- catch block --</COMMENT>
 
   <!-- nodes -->
 

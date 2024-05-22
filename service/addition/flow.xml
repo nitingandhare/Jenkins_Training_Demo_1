@@ -11,7 +11,7 @@
   <!-- nodes -->
 
 <SEQUENCE TIMEOUT="" EXIT-ON="FAILURE">
-  <COMMENT>-- try --</COMMENT>
+  <COMMENT>-- try block --</COMMENT>
 
   <!-- nodes -->
 
